@@ -5,7 +5,9 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "react-app", 
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,7 +17,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         // suppress errors for missing 'import React' in files
@@ -23,6 +26,26 @@
         // allow jsx syntax in js files (for next.js project)
         //should add ".ts" if typescript project
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "import/prefer-default-export": "off" 
+        "import/prefer-default-export": "off",
+        "react/prop-types": 0,
+        "no-unused-vars": [1],
+        "react/jsx-props-no-spreading": 0,
+        "prettier/prettier": [
+          "error",
+          {
+            "printWidth": 80,
+            "trailingComma": "es5",
+            "semi": false,
+            "singleQuote": true,
+            "no-mixed-spaces-and-tabs": ["error", "smart-tabs"]
+          }
+      ],
+      "sort-imports": ["error", {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+    }]
     }
 }
