@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
-  margin-top: 20px;
-  max-width: 670px;
+  margin: auto;
+  max-width: 700px;
   flex-wrap: wrap;
 
   @media (max-width: 1000px) {
@@ -15,7 +15,7 @@ export const Container = styled.div`
 `
 
 export const Input = styled.input`
-  max-width: 350px;
+  max-width: 450px;
   width: 100%;
   border: 0;
   padding: 10px;
