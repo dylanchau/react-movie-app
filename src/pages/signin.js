@@ -1,17 +1,38 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { HeaderContainer } from '../containers/HeaderContainer'
 import { FooterContainer } from '../containers/footer'
 import { Form } from '../components'
+import { FirebaseContext } from '../context/firebase'
+import * as ROUTERS from '../constant/routes'
 
 export default function SignIn(props) {
+  const firebase = useContext(FirebaseContext)
+  const history = useHistory()
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
   const isInvalid = email === '' || password === ''
 
-  const handleSubmit = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault()
-    // console.log(`you clicked Login button ${e}`)
+
+    setError(null)
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // console.log(userCredential)
+        history.push(ROUTERS.HOME)
+      })
+      .catch((err) => {
+        const { message } = err
+        setError(message)
+        setEmail('')
+        setPassword('')
+      })
   }
 
   return (
@@ -22,7 +43,7 @@ export default function SignIn(props) {
 
           {error && <Form.Error>{error}</Form.Error>}
 
-          <Form.Base onSubmit={(e) => handleSubmit(e)} method="POST">
+          <Form.Base onSubmit={(e) => handleSignIn(e)} method="POST">
             <Form.Input
               placeholder="Email"
               value={email}
@@ -41,7 +62,7 @@ export default function SignIn(props) {
           </Form.Base>
           <Form.Text>
             New to Netflix?
-            <Form.Link to="/signup">Sign Up</Form.Link>
+            <Form.Link to="/signup">Sign Up now </Form.Link>
           </Form.Text>
           <Form.TextSmall>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
