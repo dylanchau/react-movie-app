@@ -8,7 +8,7 @@ import { FirebaseContext } from '../context/firebase'
 import * as ROUTERS from '../constant/routes'
 
 export default function SignUp(props) {
-  const firebase = useContext(FirebaseContext)
+  const { firebase } = useContext(FirebaseContext)
   const history = useHistory()
 
   const [email, setEmail] = useState('')
