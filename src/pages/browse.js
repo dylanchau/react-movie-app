@@ -1,6 +1,6 @@
-import BrowseContainer from '../containers/browse'
-import { useContent } from '../hooks'
-import { selectFilter } from '../utils'
+import BrowseContainer from 'containers/browse'
+import { useContent } from 'hooks'
+import { selectFilter } from 'utils'
 
 export default function Browse(props) {
   const { series } = useContent('series')

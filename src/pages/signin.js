@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { HeaderContainer } from '../containers/HeaderContainer'
-import { FooterContainer } from '../containers/footer'
-import { Form } from '../components'
-import { FirebaseContext } from '../context/firebase'
-import * as ROUTERS from '../constant/routes'
+import { HeaderContainer } from 'containers/HeaderContainer'
+import { FooterContainer } from 'containers/footer'
+import { Form } from 'components'
+import { FirebaseContext } from 'context/firebase'
+import * as ROUTERS from 'constant/routes'
 
 export default function SignIn(props) {
   const { firebase } = useContext(FirebaseContext)
