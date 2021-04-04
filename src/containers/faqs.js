@@ -1,5 +1,5 @@
-import { Accordion, OptForm } from '../components'
-import faqsData from '../fixtures/faqs.json'
+import { Accordion, OptForm } from 'components'
+import faqsData from 'fixtures/faqs.json'
 
 export function FaqsContainer() {
   return (

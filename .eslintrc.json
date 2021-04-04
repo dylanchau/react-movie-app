@@ -7,7 +7,9 @@
         "plugin:react/recommended",
         "airbnb",
         "react-app", 
-        "prettier"
+        "prettier",
+        "plugin:import/errors", 
+        "plugin:import/warnings"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -40,12 +42,23 @@
             "no-mixed-spaces-and-tabs": ["error", "smart-tabs"]
           }
       ],
-      "sort-imports": ["error", {
-        "ignoreCase": false,
-        "ignoreDeclarationSort": true,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-        "allowSeparatedGroups": false
-    }]
+      "sort-imports": [
+        "error", 
+        {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+            "allowSeparatedGroups": false
+        
+        }
+      ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": ["node_modules", "src/"]
+            }
+        }
     }
 }

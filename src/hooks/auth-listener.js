@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import { FirebaseContext } from '../context/firebase'
+import { FirebaseContext } from 'context/firebase'
 
 export default function useAuthListener() {
   const { firebase } = useContext(FirebaseContext)
@@ -21,5 +21,5 @@ export default function useAuthListener() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  return { user }
+  return user
 }

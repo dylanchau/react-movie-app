@@ -1,7 +1,7 @@
-import Header from '../components/header'
-import Profiles from '../components/profiles'
-import * as ROUTES from '../constant/routes'
-import logo from '../logo.svg'
+import Header from 'components/header'
+import Profiles from 'components/profiles'
+import * as ROUTES from 'constant/routes'
+import logo from 'logo.svg'
 
 export function SelectProfileContainer({ user, setProfile }) {
   return (

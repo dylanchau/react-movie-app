@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from 'react'
-import { FirebaseContext } from '../context/firebase'
+import { FirebaseContext } from 'context/firebase'
 
 const useContent = (target) => {
   const { firebase } = useContext(FirebaseContext)
