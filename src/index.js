@@ -1,12 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-// eslint-disable-next-line sort-imports
-import App from './app'
-import { GlobalStyle } from './global-styles'
 // eslint-disable-next-line sort-imports
 import 'normalize.css'
-import { firebase } from './lib/firebase.prod'
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+// eslint-disable-next-line sort-imports
+import App from './app'
 import { FirebaseContext } from './context/firebase'
+import { GlobalStyle } from './global-styles'
+import { firebase } from './lib/firebase.prod'
 
 ReactDOM.render(
   <>

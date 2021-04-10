@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react'
-import { isEmpty, isEqual } from 'lodash'
-import { useHistory } from 'react-router-dom'
-import { HeaderContainer } from 'containers/HeaderContainer'
-import { FooterContainer } from 'containers/footer'
 import { Form } from 'components'
-import { FirebaseContext } from 'context/firebase'
 import * as ROUTERS from 'constant/routes'
+import { FooterContainer } from 'containers/footer'
+import { HeaderContainer } from 'containers/HeaderContainer'
+import { FirebaseContext } from 'context/firebase'
+import { isEmpty, isEqual } from 'lodash'
+import { useContext, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 export default function SignUp(props) {
   const { firebase } = useContext(FirebaseContext)
