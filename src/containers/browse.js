@@ -1,4 +1,4 @@
-import { Header, Loading } from 'components'
+import { Card, Header, Loading } from 'components'
 import * as ROUTES from 'constant/routes'
 import { SelectProfileContainer } from 'containers/profiles'
 import { FirebaseContext } from 'context/firebase'
@@ -9,6 +9,9 @@ function BrowseContainer({ slies }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [profile, setProfile] = useState({})
   const [loading, setLoading] = useState(true)
+  const [category, setCategogy] = useState('films')
+  const [slideRows, setSlideRows] = useState([])
+
   const { firebase } = useContext(FirebaseContext)
   const user = firebase.auth().currentUser || {}
 
@@ -21,6 +24,10 @@ function BrowseContainer({ slies }) {
     }
   }, [profile.displayName])
 
+  useEffect(() => {
+    setSlideRows(slies[category])
+  }, [slies, category])
+
   // eslint-disable-next-line no-nested-ternary
   return profile.displayName ? (
     <>
@@ -29,8 +36,18 @@ function BrowseContainer({ slies }) {
         <Header.Frame>
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} src={logo} alt="film" />
-            <Header.TextLink>Series</Header.TextLink>
-            <Header.TextLink>Films</Header.TextLink>
+            <Header.TextLink
+              onClick={() => setCategogy('series')}
+              active={category === 'series' ? 'true' : 'false'}
+            >
+              Series
+            </Header.TextLink>
+            <Header.TextLink
+              onClick={() => setCategogy('films')}
+              active={category === 'series' ? 'true' : 'false'}
+            >
+              Films
+            </Header.TextLink>
           </Header.Group>
 
           <Header.Group>
@@ -68,6 +85,35 @@ function BrowseContainer({ slies }) {
           <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
       </Header>
+
+      <Card.Group>
+        {slideRows.map((slide) => (
+          <Card key={`${category}-${slide.title.toLowerCase()}`}>
+            <Card.Tittle>{slide.title}</Card.Tittle>
+            <Card.Entities>
+              {slide.data.map((item) => (
+                <Card.Item key={item.docId} item={item}>
+                  <Card.Image
+                    src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                  />
+                  <Card.Meta>
+                    <Card.SubTittle>{item.title}</Card.SubTittle>
+                    <Card.Text>{item.description}</Card.Text>
+                  </Card.Meta>
+                </Card.Item>
+              ))}
+            </Card.Entities>
+
+            <Card.Feature category={category}>
+              {/* <Player>
+                <Player.Button />
+                <Player.Video src="/videos/bunny.mp4" />
+              </Player> */}
+              <p>Hello</p>
+            </Card.Feature>
+          </Card>
+        ))}
+      </Card.Group>
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
