@@ -1,9 +1,12 @@
-import { Card, Header, Loading } from 'components'
+import { Card, Header, Loading, Player } from 'components'
 import * as ROUTES from 'constant/routes'
 import { SelectProfileContainer } from 'containers/profiles'
 import { FirebaseContext } from 'context/firebase'
+import Fuse from 'fuse.js'
 import logo from 'logo.svg'
 import { useContext, useEffect, useState } from 'react'
+
+import { FooterContainer } from './footer'
 
 function BrowseContainer({ slies }) {
   const [searchTerm, setSearchTerm] = useState('')
@@ -28,6 +31,19 @@ function BrowseContainer({ slies }) {
     setSlideRows(slies[category])
   }, [slies, category])
 
+  useEffect(() => {
+    const fuse = new Fuse(slideRows, {
+      keys: ['data.description', 'data.title', 'data.genre'],
+    })
+
+    const result = fuse.search(searchTerm).map(({ item }) => item)
+    if (slideRows.length > 0 && searchTerm.length > 3 && result.length > 0) {
+      setSlideRows(result)
+    } else {
+      setSlideRows(slies[category])
+    }
+  }, [searchTerm])
+
   // eslint-disable-next-line no-nested-ternary
   return profile.displayName ? (
     <>
@@ -44,7 +60,7 @@ function BrowseContainer({ slies }) {
             </Header.TextLink>
             <Header.TextLink
               onClick={() => setCategogy('films')}
-              active={category === 'series' ? 'true' : 'false'}
+              active={category === 'films' ? 'true' : 'false'}
             >
               Films
             </Header.TextLink>
@@ -105,15 +121,15 @@ function BrowseContainer({ slies }) {
             </Card.Entities>
 
             <Card.Feature category={category}>
-              {/* <Player>
+              <Player>
                 <Player.Button />
                 <Player.Video src="/videos/bunny.mp4" />
-              </Player> */}
-              <p>Hello</p>
+              </Player>
             </Card.Feature>
           </Card>
         ))}
       </Card.Group>
+      <FooterContainer />
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
