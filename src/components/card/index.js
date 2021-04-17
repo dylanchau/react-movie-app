@@ -96,17 +96,18 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
         <FeatureClose onClick={() => setShowFeature((prev) => !prev)}>
           <Image src="/images/icons/close.png" alt="Close" />
         </FeatureClose>
-      </Content>
 
-      <Group margin="30px 0" flexDirection="row" alginItem="center">
-        <Maturity rating={itemFeature.maturity}>
-          {itemFeature.maturity < 12 ? 'PG' : itemFeature.maturity}
-        </Maturity>
-        <FeatureText fontWeight="bold">
-          {itemFeature.genre.charAt(0).toUpperCase() +
-            itemFeature.genre.slice(1)}
-        </FeatureText>
-      </Group>
+        <Group margin="30px 0" flexDirection="row" alginItem="center">
+          <Maturity rating={itemFeature.maturity}>
+            {itemFeature.maturity < 12 ? 'PG' : itemFeature.maturity}
+          </Maturity>
+          <FeatureText fontWeight="bold">
+            {itemFeature.genre.charAt(0).toUpperCase() +
+              itemFeature.genre.slice(1)}
+          </FeatureText>
+        </Group>
+        {children}
+      </Content>
     </Feature>
   ) : null
 }
