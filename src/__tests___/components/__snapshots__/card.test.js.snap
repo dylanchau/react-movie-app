@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> component Render card component and toggle card item 1`] = `
+<div
+  class="card__Group-sc-9frf9s-2 cKFQUF"
+>
+  <div
+    class="card__Container-sc-9frf9s-1 lijfTr"
+  >
+    <p
+      class="card__Title-sc-9frf9s-0 eovtZC"
+    >
+      Documentaries
+    </p>
+    <div
+      class="card__Entities-sc-9frf9s-5 dmgLgZ"
+    >
+      <div
+        class="card__Item-sc-9frf9s-8 RcSzS"
+        data-testid="IcRxJBanzE7nmIp2GMGb"
+      >
+        <img
+          class="card__Image-sc-9frf9s-7 gjkdWl"
+          src="/images/series/documentaries/tiger-king/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-9frf9s-6 fijcrh"
+        >
+          <p
+            class="card__SubTitle-sc-9frf9s-3 iEsgdO"
+          >
+            Tiger King
+          </p>
+          <p
+            class="card__Text-sc-9frf9s-4 csZgrT"
+          >
+            Tiger King description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="card__Container-sc-9frf9s-1 lijfTr"
+  >
+    <p
+      class="card__Title-sc-9frf9s-0 eovtZC"
+    >
+      Feel Good
+    </p>
+    <div
+      class="card__Entities-sc-9frf9s-5 dmgLgZ"
+    >
+      <div
+        class="card__Item-sc-9frf9s-8 RcSzS"
+        data-testid="4JDgdf5vE0K3YrW9ZnbP"
+      >
+        <img
+          class="card__Image-sc-9frf9s-7 gjkdWl"
+          src="/images/series/feel-good/juno/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-9frf9s-6 fijcrh"
+        >
+          <p
+            class="card__SubTitle-sc-9frf9s-3 iEsgdO"
+          >
+            Juno
+          </p>
+          <p
+            class="card__Text-sc-9frf9s-4 csZgrT"
+          >
+            Juno description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

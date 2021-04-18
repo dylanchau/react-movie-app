@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> Reder accordion compponent 1`] = `
+<div
+  class="accordion__Container-sc-7hnkrf-0 ZtvGA"
+>
+  <div
+    class="accordion__Inner-sc-7hnkrf-1 cxMSbt"
+  >
+    <h1
+      class="accordion__Title-sc-7hnkrf-2 MnkOs"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        What is Netflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        How much does Netflix cost?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        Where can I watch?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        How do I cancel?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        What can I watch on Netflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Accordion /> Toggle accordion compponent 1`] = `
+<div
+  class="accordion__Container-sc-7hnkrf-0 ZtvGA"
+>
+  <div
+    class="accordion__Inner-sc-7hnkrf-1 cxMSbt"
+  >
+    <h1
+      class="accordion__Title-sc-7hnkrf-2 MnkOs"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        What is Netflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        How much does Netflix cost?
+        <img
+          alt="Close"
+          src="/images/icons/close-slim.png"
+        />
+      </div>
+      <div
+        class="accordion__Body-sc-7hnkrf-6 fEkhLA"
+      >
+        Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one low fixed monthly fee. Plans start from £5.99 a month. No extra costs or contracts.
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        Where can I watch?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        How do I cancel?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="accordion__Item-sc-7hnkrf-5 hguYgM"
+    >
+      <div
+        class="accordion__Header-sc-7hnkrf-4 juHtdd"
+      >
+        What can I watch on Netflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
