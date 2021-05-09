@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> component Render Footer component 1`] = `
+<div
+  class="footer__Container-shuk8d-0 cYnqp"
+>
+  <p
+    class="footer__Title-shuk8d-4 ephMqs"
+  >
+    Questions? Contact us.
+  </p>
+  <div
+    class="footer__Break-shuk8d-6 hJsYv"
+  />
+  <div
+    class="footer__Row-shuk8d-2 ilGlpe"
+  >
+    <div
+      class="footer__Column-shuk8d-1 iDdzCB"
+    >
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        FQA
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Investor Relations
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Privacy
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Speed Test
+      </a>
+    </div>
+    <div
+      class="footer__Column-shuk8d-1 iDdzCB"
+    >
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Help Center
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Jobs
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Cookie Preferences
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Legal Notices
+      </a>
+    </div>
+    <div
+      class="footer__Column-shuk8d-1 iDdzCB"
+    >
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Account
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Ways to Watch
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Corporate Information
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Netflix Originals
+      </a>
+    </div>
+    <div
+      class="footer__Column-shuk8d-1 iDdzCB"
+    >
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Media Center
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Terms of Use
+      </a>
+      <a
+        class="footer__Link-shuk8d-3 bFmAap"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+  <div
+    class="footer__Break-shuk8d-6 hJsYv"
+  />
+  <p
+    class="footer__Text-shuk8d-5 kugXEd"
+  >
+    Netflix Vietnam
+  </p>
+</div>
+`;

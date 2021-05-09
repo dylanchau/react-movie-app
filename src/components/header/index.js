@@ -41,7 +41,10 @@ Header.Search = function HeaderSearch({
 
   return (
     <Search {...restProps}>
-      <SearchIcon onClick={() => setSearchActive((preProp) => !preProp)}>
+      <SearchIcon
+        onClick={() => setSearchActive((preProp) => !preProp)}
+        data-testid="search-click"
+      >
         <img alt="search" src="/images/icons/search.png" />
       </SearchIcon>
       <SearchInput
@@ -49,6 +52,7 @@ Header.Search = function HeaderSearch({
         onChange={({ target }) => setSearchTerm(target.value)}
         active={searchActive}
         placeholder="Search..."
+        data-testid="search-input"
       />
     </Search>
   )

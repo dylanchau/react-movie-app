@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> component Render Form component 1`] = `
+<div
+  class="form__Container-sc-1nkxmg2-0 kwiJzt"
+>
+  <h1
+    class="form__Title-sc-1nkxmg2-3 gTCQqG"
+  >
+    Sign In
+  </h1>
+  <form
+    class="form__Base-sc-1nkxmg2-2 imwYnh"
+  >
+    <input
+      class="form__Input-sc-1nkxmg2-7 cVIMNA"
+      placeholder="Input"
+    />
+    <button
+      class="form__Submit-sc-1nkxmg2-8 ggUrxv"
+      type="submit"
+    >
+      Log In
+    </button>
+  </form>
+  <p
+    class="form__Text-sc-1nkxmg2-4 cVvUHD"
+  >
+    New to Netflix?
+    <a
+      class="form__Link-sc-1nkxmg2-6 khKSlh"
+      href="/signup"
+    >
+      Sign Up now 
+    </a>
+  </p>
+  <p
+    class="form__TextSmall-sc-1nkxmg2-5 ddbsXT"
+  >
+    This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+  </p>
+</div>
+`;
+
+exports[`<Form /> component Render Form component with error 1`] = `
+<div
+  class="form__Container-sc-1nkxmg2-0 kwiJzt"
+>
+  <h1
+    class="form__Title-sc-1nkxmg2-3 gTCQqG"
+  >
+    Sign In
+  </h1>
+  <div
+    class="form__Error-sc-1nkxmg2-1 iGKTTj"
+  >
+    An Error happen
+  </div>
+</div>
+`;

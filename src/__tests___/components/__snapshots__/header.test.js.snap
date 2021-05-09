@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> component Render header component - only include Logo and Button 1`] = `
+<div
+  class="header__Background-q26fio-0 dbrQnf"
+>
+  <div
+    class="header__Container-q26fio-1 boVZsC"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Netflix"
+        class="header__Logo-q26fio-14 jonBRx"
+        src="logo.svg"
+      />
+    </a>
+    <a
+      class="header__ButtonLink-q26fio-7 kARkTh"
+      href="/"
+    >
+      Sign In
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Header /> component Render header component full populate 1`] = `
+<div
+  class="header__Background-q26fio-0 kgLMhA"
+  src="joker1"
+>
+  <div
+    class="header__Container-q26fio-1 boVZsC"
+  >
+    <div
+      class="header__Group-q26fio-3 jseyGL"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="film"
+          class="header__Logo-q26fio-14 jonBRx"
+          src="logo.svg"
+        />
+      </a>
+      <p
+        class="header__Link-q26fio-2 jXeTQa"
+      >
+        Series
+      </p>
+      <p
+        class="header__Link-q26fio-2 jXeTQa"
+      >
+        Films
+      </p>
+    </div>
+    <div
+      class="header__Group-q26fio-3 jseyGL"
+    >
+      <div
+        class="header__Search-q26fio-5 bdgbQD"
+      >
+        <button
+          class="header__SearchIcon-q26fio-6 buwzOa"
+          data-testid="search-click"
+        >
+          <img
+            alt="search"
+            src="/images/icons/search.png"
+          />
+        </button>
+        <input
+          class="header__SearchInput-q26fio-4 enOho"
+          data-testid="search-input"
+          placeholder="Search..."
+          value="Joker"
+        />
+      </div>
+      <div
+        class="header__Profile-q26fio-10 gCSUAh"
+      >
+        <button
+          class="header__Picture-q26fio-8 hAZzGM"
+          src="/images/users/.png"
+        />
+        <div
+          class="header__Dropdown-q26fio-9 bVGpQy"
+        >
+          <div
+            class="header__Group-q26fio-3 jseyGL"
+          >
+            <button
+              class="header__Picture-q26fio-8 hAZzGM"
+              src="/images/users/.png"
+            />
+            <p
+              class="header__Link-q26fio-2 jXeTQa"
+            >
+              Tester
+            </p>
+          </div>
+          <div
+            class="header__Group-q26fio-3 jseyGL"
+          >
+            <p
+              class="header__Link-q26fio-2 jXeTQa"
+            >
+              Sign Out
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="header__Container-q26fio-1 header__Feature-q26fio-11 boVZsC coJtYq"
+  >
+    <h2
+      class="header__FeatureCallOut-q26fio-12 jHPtTM"
+    >
+      Watch Joker Now
+    </h2>
+    <p
+      class="header__Text-q26fio-13 jtQKvQ"
+    >
+      Header feature text
+    </p>
+    <button
+      class="header__PlayButton-q26fio-15 eNMWyZ"
+    >
+      Play
+    </button>
+  </div>
+</div>
+`;
