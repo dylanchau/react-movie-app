@@ -22,6 +22,7 @@ export function SelectProfileContainer({ user, setProfile }) {
                 photoURL: user.photoURL,
                 // eslint-disable-next-line prettier/prettier
               })}
+            data-testid="user-profile"
           >
             <Profiles.Picture src={user.photoURL} />
             <Profiles.Name>{user.displayName}</Profiles.Name>
