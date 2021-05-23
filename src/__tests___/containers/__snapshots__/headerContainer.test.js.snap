@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectProfileContainer /> Profile container 1`] = `
+<div
+  class="header__Background-q26fio-0 dbrQnf"
+>
+  <div
+    class="header__Container-q26fio-1 boVZsC"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Netflix"
+        class="header__Logo-q26fio-14 jonBRx"
+        src="logo.svg"
+      />
+    </a>
+    <a
+      class="header__ButtonLink-q26fio-7 kARkTh"
+      href="/signin"
+    >
+      Sign In
+    </a>
+  </div>
+  <p>
+    Hello
+  </p>
+</div>
+`;
